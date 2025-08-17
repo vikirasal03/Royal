@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment | Royal Invest</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .payment-box {
+      max-width: 600px;
+      margin: 30px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .payment-box h2 {
+      margin-bottom: 15px;
+    }
+    .payment-methods {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+    .payment-methods button {
+      background: #007bff;
+      color: #fff;
+      border: none;
+      padding: 15px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .payment-methods button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Royal Invest</h1>
+    <p>Secure Payment</p>
+  </header>
+
+  <div class="payment-box">
+    <h2>Choose Payment Method</h2>
+    <p>Amount to Pay: <strong>₹1000</strong></p>
+
+    <div class="payment-methods">
+      <button onclick="pay('phonepe')">Pay with PhonePe</button>
+      <button onclick="pay('paytm')">Pay with Paytm</button>
+      <button onclick="pay('gpay')">Pay with Google Pay</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Royal Invest | All rights reserved.</p>
+  </footer>
+
+  <script>
+    function pay(method) {
+      let upiId = "9657488255@pthdfc"; // 👈 apna UPI ID yaha likho
+      let amount = 1000;
+      let name = "Royal Invest";
+      let txnId = "TXN" + Math.floor(Math.random() * 1000000);
+
+      // UPI Payment URL
+      let url = `upi://pay?pa=${upiId}&pn=${name}&am=${amount}&cu=INR&tid=${txnId}`;
+
+      window.location.href = url;
+    }
+  </script>
+</body>
+</html>
