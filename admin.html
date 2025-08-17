@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel | Royal Invest</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .admin-box {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    table th, table td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+    table th {
+      background: #007bff;
+      color: #fff;
+    }
+    h2 {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Royal Invest</h1>
+    <p>Admin Dashboard</p>
+  </header>
+
+  <div class="admin-box">
+    <h2>Registered Users</h2>
+    <table>
+      <tr>
+        <th>User ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Balance</th>
+        <th>Status</th>
+      </tr>
+      <tr>
+        <td>101</td>
+        <td>Rahul Sharma</td>
+        <td>rahul@example.com</td>
+        <td>₹5000</td>
+        <td>Active</td>
+      </tr>
+      <tr>
+        <td>102</td>
+        <td>Priya Singh</td>
+        <td>priya@example.com</td>
+        <td>₹2000</td>
+        <td>Pending</td>
+      </tr>
+    </table>
+
+    <h2>Recent Payments</h2>
+    <table>
+      <tr>
+        <th>Txn ID</th>
+        <th>User</th>
+        <th>Amount</th>
+        <th>Method</th>
+        <th>Status</th>
+      </tr>
+      <tr>
+        <td>TXN78632</td>
+        <td>Rahul Sharma</td>
+        <td>₹1000</td>
+        <td>PhonePe</td>
+        <td>Success</td>
+      </tr>
+      <tr>
+        <td>TXN54213</td>
+        <td>Priya Singh</td>
+        <td>₹500</td>
+        <td>Paytm</td>
+        <td>Pending</td>
+      </tr>
+    </table>
+  </div>
+
+  <footer>
+    <p>© 2025 Royal Invest | Admin Panel</p>
+  </footer>
+</body>
+</html>
