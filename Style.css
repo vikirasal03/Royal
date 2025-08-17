@@ -1,0 +1,95 @@
+/* Royal Invest Website CSS */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: linear-gradient(120deg, #000428, #004e92);
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+}
+header h1 {
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+}
+
+/* Navbar */
+nav {
+  background: #111;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 14px 20px;
+  transition: background 0.3s ease;
+}
+nav a:hover {
+  background: #444;
+  border-radius: 4px;
+}
+
+/* Hero Section */
+.hero {
+  background: url("https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1350&q=80") no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.hero p {
+  font-size: 1.2rem;
+}
+.hero .btn {
+  display: inline-block;
+  padding: 12px 25px;
+  margin-top: 20px;
+  background: #28a745;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+.hero .btn:hover {
+  background: #218838;
+}
+
+/* Container */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+.container h2 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #000428;
+  color: #fff;
+  margin-top: 40px;
+}
