@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | Royal Invest</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .dashboard {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .balance {
+      font-size: 1.5rem;
+      margin: 20px 0;
+      color: #28a745;
+    }
+    .plans {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .plan {
+      background: #f5f5f5;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .plan h3 {
+      margin-bottom: 10px;
+    }
+    .plan button {
+      background: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .plan button:hover {
+      background: #0056b3;
+    }
+    .logout {
+      margin-top: 30px;
+    }
+    .logout a {
+      color: red;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Royal Invest</h1>
+    <p>User Dashboard</p>
+  </header>
+
+  <div class="dashboard">
+    <h2>Welcome, User 👋</h2>
+    <p class="balance">Your Balance: ₹5000</p>
+
+    <h2>Available Investment Plans</h2>
+    <div class="plans">
+      <div class="plan">
+        <h3>Starter Plan</h3>
+        <p>Invest ₹1000 → Earn ₹50/day</p>
+        <button>Invest Now</button>
+      </div>
+      <div class="plan">
+        <h3>Gold Plan</h3>
+        <p>Invest ₹5000 → Earn ₹300/day</p>
+        <button>Invest Now</button>
+      </div>
+      <div class="plan">
+        <h3>Platinum Plan</h3>
+        <p>Invest ₹10,000 → Earn ₹700/day</p>
+        <button>Invest Now</button>
+      </div>
+    </div>
+
+    <div class="logout">
+      <a href="login.html">Logout</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Royal Invest | All rights reserved.</p>
+  </footer>
+</body>
+</html>
